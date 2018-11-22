@@ -1,0 +1,2 @@
+# LearnScala
+Learning Scala Syntax
