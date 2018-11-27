@@ -1,15 +1,22 @@
 
 import scala.arithmeticscala.CommonArithmetics
 import scala.arithmeticscala.MathImport
+import scala.conditionals.IfStatement
+import scala.conditionals.WhileStatement
+
 object MainObject /* extends App  */{
   var commonArithmetics = new CommonArithmetics
   var mathImport = new MathImport
+  var ifStatement = new IfStatement
+  var whileStatement =  new WhileStatement
+
   def main(args: Array[String]) {
     commonArithmetics.addTwoNumbers(10, 3)
     commonArithmetics.subtractNumbers(10, 3)
     commonArithmetics.divideNumbers(10, 3)
     commonArithmetics.multiplyNumbers(10, 3)
     commonArithmetics.modulusNumbers(10, 3)
+
     mathImport.getAbsoluteValue(-78)
     mathImport.getCubeRoot(64)
     mathImport.getCeilings(3.7267)
@@ -26,6 +33,9 @@ object MainObject /* extends App  */{
     mathImport.getRandomNumberBetween(1, 10)
     mathImport.getRadians(90)
     mathImport.getDegrees(1.5707963)
+
+    ifStatement.checkAge(20)
+    whileStatement.printPrimeNumbers(1, 100)
   }
 
 }
